@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="Survey Form.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Music School Registration</h1>
+    <p id="description" class="description text-center">
+      Register to our music school from below
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="6"
+        max="16"
+        class="form-control"
+        placeholder="Age"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <p>Address:</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your address here..."
+        required
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <p>Choice of Instrument</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select Instrument</option>
+        <option value="Violin">Violin</option>
+        <option value="Guitar">Guitar</option>
+        <option value="Bass">Bass</option>
+        <option value="Drums">Drums</option>
+        <option value="Vocals">Vocals</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>
+        What kind of music do you want to play?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="blues"
+          type="checkbox"
+          class="input-checkbox"
+        />blues</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="classical"
+          type="checkbox"
+          class="input-checkbox"
+        />classical</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="country"
+          type="checkbox"
+          class="input-checkbox"
+        />country</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="hip hop"
+          type="checkbox"
+          class="input-checkbox"
+        />hip hop</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="dance"
+          type="checkbox"
+          class="input-checkbox"
+        />dance</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value=" electronic"
+          type="checkbox"
+          class="input-checkbox"
+        /> electronic</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value=" folk"
+          type="checkbox"
+          class="input-checkbox"
+        /> folk</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="pop"
+          type="checkbox"
+          class="input-checkbox"
+        />pop</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="rap"
+          type="checkbox"
+          class="input-checkbox"
+        />rap</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="rock"
+          type="checkbox"
+          class="input-checkbox"
+        />rock</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="opera"
+          type="checkbox"
+          class="input-checkbox"
+        />opera</label
+      >
+    </div>
+    <div class="form-group">
+      <p>Pick Days for Classes</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Monday"
+          type="radio"
+          class="input-radio"
+          checked
+        />Monday</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Tuesday"
+          type="radio"
+          class="input-radio"
+        />Tuesday</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="Wednesday"
+          type="radio"
+          class="input-radio"
+        />Wednesday</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="Thursday"
+          type="radio"
+          class="input-radio"
+        />Thursday</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="Friday"
+          type="radio"
+          class="input-radio"
+        />Friday</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="Saturday"
+          type="radio"
+          class="input-radio"
+        />Saturday</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="Sunday"
+          type="radio"
+          class="input-radio"
+        />Sunday</label
+      >
+          </div>
+    
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
